@@ -109,7 +109,7 @@ var colour = (function () {
         setColour(hex)
         triggerCallbacks()
       }
-    },
+    }
   })
 
   return colour
