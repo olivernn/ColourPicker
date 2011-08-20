@@ -1,0 +1,73 @@
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: #333;
+    width: 200px;
+    height:5px;
+    border-radius: 2px;
+    border: 1px solid #545454;
+    margin-bottom: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+     -webkit-appearance: none;
+    background-color: #666;
+    background-image:-webkit-gradient(linear, 0% 48%, 0% 47%, from(transparent), to(rgba(255, 255, 255, 0.1)));
+    box-shadow: 1px 1px 5px #111;
+    width: 8px;
+    height: 14px;
+    border-radius: 2px;
+    border: 1px solid #444;
+    cursor: pointer;
+}
+
+input[type="text"] {
+  border: 1px solid #777;
+  background-color: #333;
+  background-image: -webkit-linear-gradient(top, #303030, #3f3f3f);
+  box-shadow: inset 1px 1px 3px #222;
+  padding: 3px 0;
+  color: white;
+  width: 30px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+#hex {
+  width: 100px;
+  text-transform: capitalize;
+}
+
+legend {
+  color: white;
+  writing-mode:tb-rl;
+}
+
+.fields {
+  margin:0 auto;
+  padding:0;
+}
+
+.fields:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.fields li{
+  padding: 10px 0;
+  width: 200px;
+  float: left;
+  margin: 0 20px;
+}
+
+.fields input {
+  display:block;
+}
+
+.controls {
+  width: 720px;
+  margin: 0 auto;
+}

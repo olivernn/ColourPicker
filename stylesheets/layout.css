@@ -1,0 +1,32 @@
+#wrap {
+  width: 720px;
+  margin:10px auto;
+  border-radius: 5px;
+  border-left: 2px solid #333;
+  border-right: 2px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  box-shadow: 2px 2px 10px black,
+              -2px 0px 10px black;
+}
+
+body {
+  background:-webkit-gradient(radial, 50% 60,0,50% 60,1050,
+              from(rgba(255,255,255,.4)),to(transparent)) transparent;
+  background-color: #010101;
+  margin:0;
+  color: #eee;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+ padding: 5px;
+}
+
+h1 {
+  -webkit-text-stroke: 1px #111;
+  -webkit-text-fill-color: #FFFFFF;
+/*  font-weight: normal;*/
+  text-shadow: 0px 0px 3px black;
+  margin: 5px;
+}

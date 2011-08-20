@@ -1,5 +1,11 @@
 <html>
   <head>
+
+    <link rel="stylesheet" href="stylesheets/layout.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/colour_picker.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/forms.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/controls.css" type="text/css">
+
     <!-- vendor -->
     <script src="javascripts/vendor/jquery.js" type="text/javascript" charset="utf-8"></script>
     <script src="javascripts/vendor/handlebars.js" type="text/javascript" charset="utf-8"></script>
@@ -21,63 +27,67 @@
     <script src="javascripts/app.js" type="text/javascript" charset="utf-8"></script>
 
     <style type="text/css" media="screen">
-
-      canvas {
-        cursor: crosshair;
-      }
-
-      #preview {
-        width: 360px;
-        height: 50px;
-      }
     </style>
 
   </head>
   <body>
     <div id="wrap">
+      <header>
+        <h1>Colour Picker</h1>
+      </header>
       <div id="colour-picker-container">
         <canvas width="360" height="100"></canvas>
       </div>
       <div id="preview"></div>
       <div>
 
-        <div id="rgb-controls-container">
-          <form id="rgb">
-            <label for="redValue">Red</label>
-            <input type="range" name="red" max="255" min="0" step="1" id="redRange">
-            <input type="text" name="red" id="redValue">
+        <div id="rgb-controls-container" class="controls">
+          <h2>RGB</h2>
+          <ul id="rgb" class="fields">
+            <li>
+              <input type="range" name="red" max="255" min="0" step="1" id="redRange">
+              <input type="text" name="red" id="redValue">
+            </li>
 
-            <label for="greenValue">Green</label>
-            <input type="range" name="green" max="255" min="0" step="1" id="greenRange">
-            <input type="text" name="green" id="greenValue">
+            <li>
+              <input type="range" name="green" max="255" min="0" step="1" id="greenRange">
+              <input type="text" name="green" id="greenValue">
+            </li>
 
-            <label for="blueValue">Blue</label>
-            <input type="range" name="blue" max="255" min="0" step="1" id="blueRange">
-            <input type="text" name="blue" id="blueValue">
-          </form>
+            <li>
+              <input type="range" name="blue" max="255" min="0" step="1" id="blueRange">
+              <input type="text" name="blue" id="blueValue">
+            </li>
+          </ul>
         </div>
 
-        <div id="hsl-controls-container">
-          <form id="hsl">
-            <label for="hueValue">Hue</label>
-            <input type="range" name="hue" max="360" min="0" step="1" id="hueRange">
-            <input type="text" name="hue" id="hueValue">
+        <div id="hsl-controls-container" class="controls">
+          <h2>HSL</h2>
+          <ul id="hsl" class="fields">
+            <li>
+              <input type="range" name="hue" max="360" min="0" step="1" id="hueRange">
+              <input type="text" name="hue" id="hueValue">
+            </li>
 
-            <label for="saturationValue">saturation</label>
-            <input type="range" name="saturation" max="100" min="0" step="1" id="saturationRange">
-            <input type="text" name="saturation" id="saturationValue">
+            <li>
+              <input type="range" name="saturation" max="100" min="0" step="1" id="saturationRange">
+              <input type="text" name="saturation" id="saturationValue">
+            </li>
 
-            <label for="lightnessValue">lightness</label>
-            <input type="range" name="lightness" max="100" min="0" step="1" id="lightnessRange">
-            <input type="text" name="lightness" id="lightnessValue">
-          </form>
+            <li>
+              <input type="range" name="lightness" max="100" min="0" step="1" id="lightnessRange">
+              <input type="text" name="lightness" id="lightnessValue">
+            </li>
+          </ul>
         </div>
 
-        <div id='hex-controls-container'>
-          <form>
-            <label for="hex">Hex</label>
-            <input type="text" name="hex" id="hex">
-          </form>
+        <div id='hex-controls-container' class="controls">
+          <h2>HEX</h2>
+          <ul class="fields">
+            <li>
+              <input type="text" name="hex" id="hex">
+            </li>
+          </ul>
         </div>
       </div>
     </div>

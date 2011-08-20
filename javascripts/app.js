@@ -21,4 +21,10 @@ $(document).ready(function () {
     colour.rgb = rgb
   })
 
+  // set an initial random colour
+  colour.rgb = {
+    red: Math.floor(Math.random() * 256),
+    blue: Math.floor(Math.random() * 256),
+    green: Math.floor(Math.random() * 256)
+  }
 })

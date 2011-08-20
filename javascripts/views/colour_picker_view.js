@@ -15,23 +15,32 @@ colourPicker = (function () {
     })
 
     var $canvas = $(canvas)
+    var scalingRatio = 360 / parseInt($canvas.css('width'), 10)
+
+    var getColour = function (e) {
+      return {
+        hue: parseInt(e.offsetX * scalingRatio, 10),
+        saturation: (100 - parseInt(e.offsetY * scalingRatio, 10)),
+        lightness: 50
+      }
+    }
 
     var performCallbacks = function (e) {
       callbacks.forEach(function (callback) {
-        callback({
-          hue: e.offsetX,
-          saturation: (100 - e.offsetY),
-          lightness: 50
-        })
+        callback(getColour(e))
       })
+    }
+
+    var unbindEvents = function () {
+      $canvas.unbind('mouseleave')
+      $canvas.unbind('mouseup')
+      $canvas.unbind('mousemove')
     }
 
     $canvas.bind('mousedown', function () {
       $canvas.bind('mousemove', performCallbacks)
-
-      $canvas.one('mouseup', function () {
-        $canvas.unbind('mousemove')
-      })
+      $canvas.one('mouseleave', unbindEvents)
+      $canvas.one('mouseup', unbindEvents)
     })
 
     $canvas.bind('click', performCallbacks)

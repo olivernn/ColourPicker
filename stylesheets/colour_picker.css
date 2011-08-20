@@ -1,0 +1,19 @@
+#colour-picker-container {
+  width: 960px;
+}
+
+canvas {
+  cursor: crosshair;
+  width: 720px;
+  height: 200px;
+  display: block;
+}
+
+#preview {
+  background-image: -webkit-gradient(linear, 0% 48%, 0% 47%, from(transparent), to(rgba(255, 255, 255, 0.04)));
+  width: 720px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
