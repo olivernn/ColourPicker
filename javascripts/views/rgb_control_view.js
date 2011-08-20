@@ -17,6 +17,8 @@ var rgbControlView = (function () {
       return memo
     }, {})
 
+    rgbObj[this.name] = this.value
+
     changeCallbacks.forEach(function (cb) {
       cb(rgbObj)
     })

@@ -7,6 +7,7 @@ var hslControlView = (function () {
   var init = function () {
     elem = $(selector)
     colour.onChange(displayHSLColour)
+
     elem.delegate('input', 'change', callChangeCallbacks)
     elem.find('input[type="range"]').range()
   }
@@ -16,6 +17,8 @@ var hslControlView = (function () {
       memo[elem.name] = elem.value
       return memo
     }, {})
+
+    hslObj[this.name] = this.value
 
     changeCallbacks.forEach(function (cb) {
       cb(hslObj)
