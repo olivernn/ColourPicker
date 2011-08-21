@@ -1,4 +1,4 @@
-// ColourPicker: 76dbccf8c046ad7c9501d0ea541df4dfbabcb60f
+// ColourPicker: b612e4269453ef13c5b27ebfa30239e6978fb8ee
 // (c) 2011 Oliver Nightingale
 //
 //  Released under MIT license.
@@ -363,6 +363,8 @@ var rgbControlView = (function () {
       memo[elem.name] = elem.value
       return memo
     }, {})
+
+    rgbObj[this.name] = this.value
 
     changeCallbacks.forEach(function (cb) {
       cb(rgbObj)

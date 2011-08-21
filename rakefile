@@ -1,9 +1,19 @@
 $: << 'lib'
 
 autoload :Bundler, 'bundler'
-task :default => :test
+autoload :Manifest, 'manifest'
+
+task :default => :build
 
 desc 'Create bundled and minified source files.'
 task :bundle do
   Bundler.bundle!
+end
+
+task :manifest do
+  Manifest.build!
+end
+
+task :build => [:bundle, :manifest] do
+  puts 'build complete'
 end

@@ -1,0 +1,7 @@
+CACHE MANIFEST
+#revision : b612e4269453ef13c5b27ebfa30239e6978fb8ee
+/dist/prod.min.js
+/stylesheets/layout.css
+/stylesheets/color_picker.css
+/stylesheets/forms.css
+/stylesheets/controls.css
