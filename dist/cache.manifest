@@ -1,7 +1,7 @@
 CACHE MANIFEST
-#revision : b612e4269453ef13c5b27ebfa30239e6978fb8ee
-/dist/prod.min.js
-/stylesheets/layout.css
-/stylesheets/color_picker.css
-/stylesheets/forms.css
-/stylesheets/controls.css
+#revision : c5331c1141b0d09e550b847cc36d05f5d3a0c288
+/ColourPicker/dist/prod.min.js
+/ColourPicker/stylesheets/layout.css
+/ColourPicker/stylesheets/color_picker.css
+/ColourPicker/stylesheets/forms.css
+/ColourPicker/stylesheets/controls.css

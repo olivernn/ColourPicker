@@ -1,4 +1,4 @@
-// ColourPicker: b612e4269453ef13c5b27ebfa30239e6978fb8ee
+// ColourPicker: c5331c1141b0d09e550b847cc36d05f5d3a0c288
 // (c) 2011 Oliver Nightingale
 //
 //  Released under MIT license.
