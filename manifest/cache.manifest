@@ -2,6 +2,6 @@ CACHE MANIFEST
 #revision : @REVISION
 /ColourPicker/dist/prod.min.js
 /ColourPicker/stylesheets/layout.css
-/ColourPicker/stylesheets/color_picker.css
+/ColourPicker/stylesheets/colour_picker.css
 /ColourPicker/stylesheets/forms.css
 /ColourPicker/stylesheets/controls.css

@@ -1,7 +1,7 @@
 CACHE MANIFEST
-#revision : c5331c1141b0d09e550b847cc36d05f5d3a0c288
+#revision : 9e536e694a9e1b1a63d799b74ec36577370ee9d2
 /ColourPicker/dist/prod.min.js
 /ColourPicker/stylesheets/layout.css
-/ColourPicker/stylesheets/color_picker.css
+/ColourPicker/stylesheets/colour_picker.css
 /ColourPicker/stylesheets/forms.css
 /ColourPicker/stylesheets/controls.css
